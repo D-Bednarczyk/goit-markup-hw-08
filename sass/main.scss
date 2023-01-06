@@ -1,1 +1,12 @@
 @use "./utils/vars" as *;
+@import "./components/logo";
+@import "./components/header";
+@import "./components/socialmedia";
+@import "./components/footer";
+@import "./components/portfolio";
+@import "./components/index";
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

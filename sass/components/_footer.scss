@@ -1,0 +1,81 @@
+.footer {
+  background-color: var(--brand-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__flex {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+  }
+  &__address {
+    margin-top: 20px;
+    ul li:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  &__anchor {
+    font-style: normal;
+    line-height: 24px;
+    color: var(--footer-grey);
+    transition-property: color, background-color;
+    transition-duration: $animationTime;
+    transition-timing-function: $aimationTimingFunction;
+    &:hover,
+    &:focus {
+      color: var(--brand-blue);
+    }
+    &--white {
+      color: var(--brand-white);
+    }
+  }
+  &__paragraph {
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--brand-white);
+    margin-bottom: 20px;
+  }
+
+  &__newsletter {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__input {
+    background: #2f303a;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background: var(--brand-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--brand-white);
+    margin-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 42px;
+    padding-right: 8px;
+  }
+  &__icon {
+    margin-left: 24px;
+    fill: var(--brand-white);
+  }
+}

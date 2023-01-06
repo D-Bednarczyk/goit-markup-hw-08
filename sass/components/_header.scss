@@ -1,0 +1,62 @@
+.topheader {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-grey);
+
+  &__flex {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  &__nav {
+    margin-right: auto;
+    ul li:not(:last-child) {
+      margin-right: 46px;
+    }
+  }
+
+  &__navAnchor {
+    position: relative;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 32px 0;
+    color: inherit;
+    display: block;
+    transition-property: color;
+    transition-duration: $animationTime;
+    transition-timing-function: $aimationTimingFunction;
+
+    &:hover,
+    &:focus {
+      color: var(--brand-blue);
+    }
+
+    &--current {
+      color: var(--brand-blue);
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: var(--brand-blue);
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        bottom: -1px;
+      }
+    }
+
+    &--Contacts {
+      color: var(--brand-grey);
+    }
+    &--ContactsMargin {
+      margin-right: 50px;
+    }
+  }
+
+  &__contactIcons {
+    margin-right: 10px;
+    fill: currentColor;
+    vertical-align: middle;
+  }
+}

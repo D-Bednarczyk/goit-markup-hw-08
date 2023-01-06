@@ -1,0 +1,36 @@
+.socialmedia {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: baseline;
+
+  &__anchor {
+    display: flex;
+    border-radius: 50px;
+    color: var(--customer-logo);
+
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--brand-white);
+    transition-property: color, background-color;
+    transition-duration: $animationTime;
+    transition-timing-function: $aimationTimingFunction;
+
+    &--footer {
+      color: var(--brand-white);
+      background-color: var(--socialmedia-footer);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--brand-white);
+      background-color: var(--brand-blue);
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

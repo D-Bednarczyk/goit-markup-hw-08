@@ -155,3 +155,45 @@
     }
   }
 }
+
+.mainheader {
+  background: var(--brand-background);
+  padding: 200px 0;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(
+      to bottom,
+      var(--gradient-color),
+      var(--gradient-color)
+    ),
+    url(https://d-bednarczyk.github.io/goit-markup-hw-04/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+
+  &__h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+    margin: 0 auto;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--brand-white);
+  }
+  &__button {
+    min-width: 200px;
+    background: var(--brand-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    margin-top: 30px;
+    padding: 10px 41px 10px 42px;
+    color: var(--brand-white);
+  }
+}

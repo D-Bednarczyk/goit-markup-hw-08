@@ -9,8 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,94 +72,121 @@
     <main>
       <section class="mainheader">
         <div class="container">
-          <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="mainheader-button" data-modal-open>
+          <h1 class="mainheader__h1">
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          </h1>
+          <button type="button" class="mainheader__button" data-modal-open>
             Zamów usługe
           </button>
-          <div class="backdrop-shadow is-hidden" data-modal>
+          <div class="modal__backdrop-shadow modal__is-hidden" data-modal>
             <div class="modal">
-              <button type="button" class="modal-btn" data-modal-close>
+              <button type="button" class="modal__btn-close" data-modal-close>
                 <svg class="x-icon" width="18px" height="18px">
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
-              <p>Zostaw swoje dane w formularzu poniżej</p>
-              <form class="inputs" autocomplete="on">
-                <div class="form-element" role="group" aria-labelledby="name">
-                  <label class="modal-label" for="first-name"> Imie </label>
-                  <div class="modal-wraper-foricon">
+              <p class="modal__p">Zostaw swoje dane w formularzu poniżej</p>
+              <form class="modal-form" autocomplete="on">
+                <div
+                  class="modal-form__element"
+                  role="group"
+                  aria-labelledby="name"
+                >
+                  <label class="modal-form__label" for="first-name">
+                    Imie
+                  </label>
+                  <div class="modal-form__wraper-foricon">
                     <input
+                      class="modal-form__input"
                       type="text"
                       name="first-name"
                       required
                       pattern="[A-Za-z ]{1,32}"
                       minlength="3"
                     />
-                    <svg class="modal-icon" width="18px" height="18px">
+                    <svg class="modal-form__icon" width="18px" height="18px">
                       <use href="./images/icons.svg#icon-person-black"></use>
                     </svg>
                   </div>
                 </div>
                 <div
-                  class="form-element"
+                  class="modal-form__element"
                   role="group"
                   aria-labelledby="phone-number"
                 >
-                  <label class="modal-label" for="phone-number">
+                  <label class="modal-form__label" for="phone-number">
                     Telefon
                   </label>
-                  <div class="modal-wraper-foricon">
+                  <div class="modal-form__wraper-foricon">
                     <input
+                      class="modal-form__input"
                       type="tel"
                       name="phone-number"
                       required
                       pattern="[0-9 +]{1,32}"
                       minlength="9"
                     />
-                    <svg class="modal-icon" width="18px" height="18px">
+                    <svg class="modal-form__icon" width="18px" height="18px">
                       <use href="./images/icons.svg#icon-phone-black"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="form-element" role="group" aria-labelledby="email">
-                  <label class="modal-label" for="email"> Email </label>
-                  <div class="modal-wraper-foricon">
-                    <input type="email" name="email" required />
-                    <svg class="modal-icon" width="18px" height="18px">
+                <div
+                  class="modal-form__element"
+                  role="group"
+                  aria-labelledby="email"
+                >
+                  <label class="modal-form__label" for="email"> Email </label>
+                  <div class="modal-form__wraper-foricon">
+                    <input
+                      class="modal-form__input"
+                      type="email"
+                      name="email"
+                      required
+                    />
+                    <svg class="modal-form__icon" width="18px" height="18px">
                       <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                   </div>
                 </div>
                 <div
-                  class="form-element-comment"
+                  class="modal-form__element-comment"
                   role="group"
                   aria-labelledby="text-area"
                 >
-                  <label class="modal-label" for="komentarz"> Komentarz </label>
+                  <label class="modal-form__label" for="komentarz">
+                    Komentarz
+                  </label>
                   <textarea
+                    class="modal-form__textarea"
                     name="komentarz"
                     rows="5"
                     placeholder="Wprowadź tekst"
                   ></textarea>
                 </div>
 
-                <label class="custom-checkbox">
+                <label class="modal-form__checkbox">
                   <input
                     name="policy-accepted"
-                    class="custom-checkbox-input"
+                    class="modal-form__input-chkbox"
                     type="checkbox"
                     required
                   />
-                  <svg class="custom-checkbox-svg" width="16px" height="15px">
+                  <svg
+                    class="modal-form__checkbox-svg"
+                    width="16px"
+                    height="15px"
+                  >
                     <use href="./images/icons.svg#icon-Vector"></use>
                   </svg>
 
                   Oświadczam iż akceptuję
-                  <a class="modal-a" href="">Regulamin</a> i
-                  <a class="modal-a" href="">Politykę Prywatności.</a>
+                  <a class="modal-form__anchor" href="">Regulamin</a> i
+                  <a class="modal-form__anchor" href=""
+                    >Politykę Prywatności.</a
+                  >
                 </label>
-
-                <button class="form-button" type="submit">Wyślij</button>
+                <button class="modal-form__button" type="submit">Wyślij</button>
               </form>
             </div>
           </div>
@@ -435,7 +460,6 @@
                   </li>
                 </ul>
               </div>
-              team-wrap
             </li>
           </ul>
         </div>

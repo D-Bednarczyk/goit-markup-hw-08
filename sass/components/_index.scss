@@ -15,11 +15,15 @@
   &__flex {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
   }
   &__icons {
-    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 120px;
-    padding: 25px 100px;
+
     background: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
@@ -27,10 +31,11 @@
   &__icon {
     background: #f5f4fa;
     border-radius: 4px;
-    margin-bottom: 30px;
+
     fill: var(--brand-grey2);
   }
   &__h3 {
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -38,7 +43,13 @@
     margin-bottom: 10px;
   }
   &__p {
-    line-height: 1.71;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
     color: var(--brand-grey);
   }
 }
@@ -84,6 +95,7 @@
   &__flex {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
   }
   &__li {
     background-color: var(--brand-white);
@@ -93,10 +105,12 @@
   }
   &__h2 {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
     text-align: center;
-    margin-bottom: 50px;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
   }
   &__h3 {
     font-weight: 500;
@@ -120,13 +134,14 @@
 .ourcustomers {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 
   &__anchor {
     color: var(--customer-logo);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid currentColor;
     border-radius: 4px;
@@ -141,10 +156,10 @@
 
   &__h2 {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   &__logo {
@@ -158,7 +173,7 @@
 
 .mainheader {
   background: var(--brand-background);
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   align-items: center;
   background-image: linear-gradient(
@@ -170,15 +185,15 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin: 0 auto;
 
   &__h1 {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    width: 696px;
+    font-size: 26px;
+    line-height: 42px;
+    width: 365px;
     margin: 0 auto;
     letter-spacing: 0.06em;
     text-transform: uppercase;

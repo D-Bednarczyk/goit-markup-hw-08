@@ -6,6 +6,12 @@
   color: var(--brand-blue);
   /*  margin-right: 93px; */
   padding: 15px 0;
+  @media screen and (min-width: $tablet-size) {
+    margin-right: 83px;
+  }
+  @media screen and (min-width: $desktop-size) {
+    margin-right: 93px;
+  }
 
   &--black {
     color: var(--black);

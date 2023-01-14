@@ -5,7 +5,7 @@
 
   &__flex {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -52,6 +52,17 @@
     &--ContactsMargin {
       margin-right: 50px;
     }
+  }
+
+  &__button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+
+  &__toggle {
   }
 
   &__contactIcons {

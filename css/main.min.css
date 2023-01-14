@@ -81,9 +81,9 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -129,6 +129,13 @@ section {
 }
 .topheader__navAnchor--ContactsMargin {
   margin-right: 50px;
+}
+.topheader__button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 }
 .topheader__contactIcons {
   margin-right: 10px;
@@ -865,6 +872,24 @@ section {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobilemenu {
+  width: 100vh;
+  height: 100vh;
+}
+.mobilemenu__.is-open {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: visibility, opacity;
+  transition-property: visibility, opacity;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 
 .container {

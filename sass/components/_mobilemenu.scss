@@ -1,0 +1,14 @@
+.mobilemenu {
+  width: 100vh;
+  height: 100vh;
+
+  &__.is-open {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(0);
+    transition-timing-function: $aimationTimingFunction;
+    transition-property: visibility, opacity;
+    transition-duration: $animationTime;
+  }
+}

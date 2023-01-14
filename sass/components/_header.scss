@@ -15,14 +15,15 @@
   }
 
   &__nav {
-    display: block;
     margin-right: auto;
     ul li:not(:last-child) {
       margin-right: 46px;
     }
     @media screen and (min-width: $tablet-size) {
+      margin-left: 83px;
     }
     @media screen and (min-width: $desktop-size) {
+      margin-left: 93px;
     }
   }
 

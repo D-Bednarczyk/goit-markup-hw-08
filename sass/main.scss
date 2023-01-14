@@ -39,12 +39,12 @@
 .ondesktop {
   display: none;
   @media screen and (min-width: $desktop-size) {
-    display: contents;
+    display: block;
   }
 }
 .notonmobile {
   display: none;
   @media screen and (min-width: $tablet-size) {
-    display: contents;
+    display: block;
   }
 }

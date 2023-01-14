@@ -23,11 +23,16 @@
         <a class="logo" href="index.html"
           >Web<span class="logo--black">Studio</span></a
         >
-        <button class="topheader__toggle topheader__button js-open-menu">
+        <button
+          class="topheader__button js-open-menu topheader__button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="24" height="16" class="">
             <use href="images/icons.svg#icon-menu_24px"></use>
           </svg>
         </button>
+
         <nav class="topheader__nav toggle">
           <ul class="topheader__flex">
             <li>
@@ -615,16 +620,58 @@
         </form>
       </div>
     </footer>
-    <div class="mobilemenu js-menu-container mobilemenu__is-open">
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+
+    <div class="mobilemenu js-menu-container">
+      <button class="mobilemenu__closebtn js-close-menu">
+        <svg width="40px" height="40px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul>
+        <li>
+          <a class="mobilemenu__anchor" href="index.html">Agencja</a>
+        </li>
+        <li>
+          <a class="mobilemenu__anchor" href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a class="mobilemenu__anchor" href="index.html">Kontakt</a>
+        </li>
+      </ul>
+
+      <a
+        href="tel:+48111111111"
+        class="mobilemenu__contacts mobilemenu__contacts--color"
+      >
+        +48 111 111 111</a
+      >
+      <a href="mailto:info@devstudio.com" class="mobilemenu__contacts">
+        info@devstudio.com</a
+      >
+      <ul class="mobilemenu__socialmedia">
+        <li>
+          <a href="" class="mobilemenu__socialanchor"> Instagram </a>
+        </li>
+        <li>
+          <a href="" class="mobilemenu__socialanchor"> Twitter </a>
+        </li>
+        <li>
+          <a href="" class="mobilemenu__socialanchor"> Facebook </a>
+        </li>
+        <li>
+          <a href="" class="mobilemenu__socialanchor"> LinkedIn </a>
+        </li>
       </ul>
     </div>
-    <script src="./js/modal.js"></script>
 
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

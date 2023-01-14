@@ -1,14 +1,91 @@
 .mobilemenu {
-  width: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
+  padding: 48px 40px;
+  background-color: var(--brand-white);
+  z-index: 999;
 
-  &__.is-open {
-    pointer-events: none;
-    visibility: hidden;
-    opacity: 0;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &.is-open {
     transform: translateX(0);
-    transition-timing-function: $aimationTimingFunction;
-    transition-property: visibility, opacity;
-    transition-duration: $animationTime;
+  }
+  &__closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    &:hover,
+    &:focus {
+      fill: var(--brand-blue);
+    }
+  }
+  &__anchor {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: var(--brand-grey2);
+    margin-bottom: 32px;
+
+    &:hover,
+    &:focus {
+      color: var(--brand-blue);
+    }
+  }
+  &__contacts {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+
+    color: var(--brand-grey);
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+    &--color {
+      font-size: 34px;
+      margin-top: 287px;
+      color: var(--brand-blue);
+    }
+    &:hover,
+    &:focus {
+      color: var(--brand-blue);
+    }
+  }
+  &__socialmedia {
+    display: flex;
+    justify-content: center;
+  }
+  &__socialanchor {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: var(--brand-blue);
+    padding: 0 10px;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: var(--border-grey);
   }
 }

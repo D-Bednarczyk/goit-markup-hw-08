@@ -2,12 +2,18 @@
   background-color: var(--brand-background);
   padding-top: 60px;
   padding-bottom: 60px;
+
   &__flex {
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
     justify-content: center;
     text-align: center;
+    align-items: baseline;
+    @media screen and (min-width: $desktop-size) {
+      text-align: left;
+      justify-content: left;
+    }
   }
   &__address {
     margin-top: 20px;
@@ -37,12 +43,18 @@
     text-transform: uppercase;
     color: var(--brand-white);
     margin-bottom: 20px;
+    @media screen and (min-width: $desktop-size) {
+      text-align: left;
+    }
   }
 
-  /*  &__newsletter {
-    display: flex;
-    align-items: flex-end;
-  } */
+  &__newsletter {
+    @media screen and (min-width: $desktop-size) {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+    }
+  }
 
   &__input {
     background: #2f303a;
@@ -59,6 +71,10 @@
     font-weight: 400;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 20px;
+    @media screen and (min-width: $desktop-size) {
+      width: 358px;
+      margin-bottom: 0;
+    }
   }
   &__button {
     display: flex;

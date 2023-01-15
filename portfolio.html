@@ -23,15 +23,27 @@
         <a class="logo" href="index.html"
           >Web<span class="logo--black">Studio</span></a
         >
-        <nav class="topheader__nav">
+        <button
+          class="topheader__button js-open-menu topheader__button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="16" class="">
+            <use href="images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+
+        <nav class="topheader__nav notonmobile">
           <ul class="topheader__flex">
-            <li>
-              <a class="topheader__navAnchor" href="index.html">Agencja</a>
-            </li>
             <li>
               <a
                 class="topheader__navAnchor topheader__navAnchor--current"
-                href="portfolio.html"
+                href="index.html"
+                >Agencja</a
+              >
+            </li>
+            <li>
+              <a class="topheader__navAnchor" href="portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -41,7 +53,7 @@
           </ul>
         </nav>
 
-        <div class="topheader__flex">
+        <div class="notonmobile">
           <a
             href="mailto:info@devstudio.com"
             class="topheader__navAnchor topheader__navAnchor--Contacts topheader__navAnchor--ContactsMargin"
@@ -395,26 +407,24 @@
           </ul>
         </div>
 
-        <form name="E-mail" autocomplete="on">
-          <div class="footer__newsletter">
-            <label>
-              <p class="footer__paragraph">Zapisz się do newslettera</p>
-              <input
-                class="footer__input"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                required
-              />
-            </label>
+        <form name="E-mail" autocomplete="on" class="footer__newsletter">
+          <label>
+            <p class="footer__paragraph">Zapisz się do newslettera</p>
+            <input
+              class="footer__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+          </label>
 
-            <button class="footer__button" type="submit">
-              Zapisz się
-              <svg class="footer__icon" width="24px" height="24px">
-                <use href="./images/icons.svg#icon-icon-send"></use>
-              </svg>
-            </button>
-          </div>
+          <button class="footer__button" type="submit">
+            Zapisz się
+            <svg class="footer__icon" width="24px" height="24px">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </footer>

@@ -206,7 +206,7 @@
         <div class="container">
           <h2 class="ourperks__visually-hidden">Nasze atuty</h2>
           <ul class="ourperks__flex">
-            <li>
+            <li class="ourperks__wrap">
               <div class="ourperks__icons">
                 <svg class="ourperks__icon" width="70px" height="70px">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -218,7 +218,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="ourperks__wrap">
               <div class="ourperks__icons">
                 <svg class="ourperks__icon" width="70px" height="70px">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -230,7 +230,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="ourperks__wrap">
               <div class="ourperks__icons">
                 <svg class="ourperks__icon" width="70px" height="70px">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -242,7 +242,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="ourperks__wrap">
               <div class="ourperks__icons">
                 <svg class="ourperks__icon" width="70px" height="70px">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -269,6 +269,7 @@
                   alt="praca przy komputerze"
                   width="370"
                   height="294"
+                  srcset="images/img1@x2.jpg 2x"
                 />
                 <p class="aboutus__label-text">Aplikacje komputerowe</p>
               </div>
@@ -280,6 +281,7 @@
                   alt="praca z telefonem"
                   width="370"
                   height="294"
+                  srcset="images/img2@x2.jpg 2x"
                 />
                 <p class="aboutus__label-text">Aplikacje mobilne</p>
               </div>
@@ -291,6 +293,7 @@
                   alt="praca z tabletem"
                   width="370"
                   height="294"
+                  srcset="images/img3@x2.jpg 2x"
                 />
                 <p class="aboutus__label-text">Rozwiązania graficzne</p>
               </div>
@@ -305,10 +308,12 @@
           <ul class="ourteam__flex">
             <li class="ourteam__li">
               <img
+                class="ourteam__img"
                 src="images/JohnDoe1.jpg"
                 alt="zdjęcie mężczyzny w okularach"
                 width="450"
                 height="460"
+                srcset="images/JohnDoe1@x2.jpg 2x"
               />
               <div class="ourteam__team-wrap">
                 <h3 class="ourteam__h3">John Doe</h3>
@@ -347,10 +352,12 @@
             </li>
             <li class="ourteam__li">
               <img
+                class="ourteam__img"
                 src="images/JohnDoe2.jpg"
                 alt="zdjęcie kobieta w okularach"
                 width="450"
                 height="460"
+                srcset="./images/JohnDoe2@x2.jpg"
               />
               <div class="ourteam__team-wrap">
                 <h3 class="ourteam__h3">John Doe</h3>
@@ -389,10 +396,12 @@
             </li>
             <li class="ourteam__li">
               <img
+                class="ourteam__img"
                 src="images/JohnDoe3.jpg"
                 alt="zdjęcie mężczyzna w jasnej koszuli"
                 width="450"
                 height="460"
+                srcset="images/JohnDoe3@x2.jpg 2x"
               />
               <div class="ourteam__team-wrap">
                 <h3 class="ourteam__h3">John Doe</h3>
@@ -431,10 +440,12 @@
             </li>
             <li class="ourteam__li">
               <img
+                class="ourteam__img"
                 src="images/JohnDoe4.jpg"
                 alt="zdjęcie mężczyzna w okularach w t-shirt"
                 width="450"
                 height="460"
+                srcset="images/JohnDoe4@x2.jpg 2x"
               />
               <div class="ourteam__team-wrap">
                 <h3 class="ourteam__h3">John Doe</h3>
@@ -599,7 +610,7 @@
           </ul>
         </div>
 
-        <form name="E-mail" autocomplete="on">
+        <form name="E-mail" autocomplete="on" class="footer__newsletter">
           <label>
             <p class="footer__paragraph">Zapisz się do newslettera</p>
             <input

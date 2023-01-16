@@ -9,9 +9,12 @@
 @import "./components/mobilemenu";
 
 .container {
-  width: $mobile-size;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  @media screen and (min-width: $mobile-size) {
+    width: $mobile-size;
+  }
   @media screen and (min-width: $tablet-size) {
     width: $tablet-size;
   }

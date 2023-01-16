@@ -52,16 +52,24 @@ button {
 }
 
 section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
+/*   padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $tablet-size) {
+  }
+  @media screen and (min-width: $desktop-size) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  } */
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -334,7 +342,7 @@ section {
 }
 .footer__input {
   background: #2f303a;
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   padding-top: 15px;
@@ -348,6 +356,11 @@ section {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__input {
@@ -635,6 +648,10 @@ section {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.ourteam__img {
+  width: 450px;
+  height: 460px;
+}
 @media screen and (min-width: 768px) {
   .ourteam__img {
     width: 354px;
@@ -688,6 +705,9 @@ section {
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .ourcustomers__anchor {
   color: var(--customer-logo);
@@ -776,7 +796,7 @@ section {
   font-weight: 900;
   font-size: 26px;
   line-height: 42px;
-  width: 365px;
+  max-width: 365px;
   margin: 0 auto;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -787,6 +807,7 @@ section {
     font-size: 44px;
     line-height: 60px;
     width: 696px;
+    max-width: 696px;
   }
 }
 .mainheader__button {
@@ -825,6 +846,21 @@ section {
   visibility: visible;
   opacity: 1;
   z-index: 2;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__backdrop-shadow {
   position: fixed;
@@ -916,7 +952,7 @@ section {
 .modal-form__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 370px;
+  width: 100%;
   height: 40px;
   padding-left: 42px;
   outline-style: none;
@@ -951,7 +987,7 @@ section {
 }
 .modal-form__textarea {
   resize: none;
-  width: 370px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1036,11 +1072,18 @@ section {
 }
 
 .mobilemenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
   background-color: var(--brand-white);
   z-index: 999;
@@ -1092,6 +1135,9 @@ section {
   color: var(--brand-grey2);
   margin-bottom: 32px;
 }
+.mobilemenu__anchor--active {
+  color: var(--brand-blue);
+}
 .mobilemenu__anchor:hover, .mobilemenu__anchor:focus {
   color: var(--brand-blue);
 }
@@ -1107,7 +1153,7 @@ section {
 }
 .mobilemenu__contacts--color {
   font-size: 34px;
-  margin-top: 287px;
+  margin-top: auto;
   color: var(--brand-blue);
 }
 .mobilemenu__contacts:hover, .mobilemenu__contacts:focus {
@@ -1117,9 +1163,12 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  row-gap: 10px;
 }
 .mobilemenu__socialanchor {
   font-style: normal;
@@ -1135,9 +1184,14 @@ section {
 }
 
 .container {
-  width: 480px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {

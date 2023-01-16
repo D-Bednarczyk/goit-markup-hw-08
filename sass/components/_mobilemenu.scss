@@ -1,9 +1,11 @@
 .mobilemenu {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
   background-color: var(--brand-white);
   z-index: 999;
@@ -46,7 +48,9 @@
     letter-spacing: 0.02em;
     color: var(--brand-grey2);
     margin-bottom: 32px;
-
+    &--active {
+      color: var(--brand-blue);
+    }
     &:hover,
     &:focus {
       color: var(--brand-blue);
@@ -64,7 +68,7 @@
     margin-bottom: 32px;
     &--color {
       font-size: 34px;
-      margin-top: 287px;
+      margin-top: auto;
       color: var(--brand-blue);
     }
     &:hover,
@@ -74,7 +78,9 @@
   }
   &__socialmedia {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    row-gap: 10px;
   }
   &__socialanchor {
     font-style: normal;

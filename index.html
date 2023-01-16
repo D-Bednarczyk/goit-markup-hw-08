@@ -307,14 +307,35 @@
           <h2 class="ourteam__h2">Nasz zespół</h2>
           <ul class="ourteam__flex">
             <li class="ourteam__li">
-              <img
+              <picture>
+                <source
+                  srcset="./images/JohnDoe1.jpg 1x, ./images/JohnDoe1@x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/JohnDoe1.jpg 1x, ./images/JohnDoe1@x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/JohnDoe1.jpg 1x, ./images/JohnDoe1@x2.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+
+                <img
+                  src="./images/JohnDoe1.jpg"
+                  class="ourteam__img"
+                  alt="zdjęcie mężczyzny w okularach"
+                />
+              </picture>
+
+              <!--  <img
                 class="ourteam__img"
                 src="images/JohnDoe1.jpg"
                 alt="zdjęcie mężczyzny w okularach"
-                width="450"
-                height="460"
                 srcset="images/JohnDoe1@x2.jpg 2x"
-              />
+              /> -->
               <div class="ourteam__team-wrap">
                 <h3 class="ourteam__h3">John Doe</h3>
                 <p class="ourteam__p">Product Designer</p>
@@ -351,14 +372,36 @@
               </div>
             </li>
             <li class="ourteam__li">
-              <img
+              <picture>
+                <source
+                  srcset="./images/JohnDoe2.jpg 1x, ./images/JohnDoe2@x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/JohnDoe2.jpg 1x, ./images/JohnDoe2@x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/JohnDoe2.jpg 1x, ./images/JohnDoe2@x2.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+
+                <img
+                  src="./images/JohnDoe2.jpg"
+                  class="ourteam__img"
+                  alt="zdjęcie kobieta w okularach"
+                />
+              </picture>
+              <!--   <img
                 class="ourteam__img"
                 src="images/JohnDoe2.jpg"
                 alt="zdjęcie kobieta w okularach"
                 width="450"
                 height="460"
                 srcset="./images/JohnDoe2@x2.jpg"
-              />
+              /> -->
               <div class="ourteam__team-wrap">
                 <h3 class="ourteam__h3">John Doe</h3>
                 <p class="ourteam__p">Frontend Developer</p>
@@ -395,14 +438,36 @@
               </div>
             </li>
             <li class="ourteam__li">
-              <img
+              <picture>
+                <source
+                  srcset="./images/JohnDoe3.jpg 1x, ./images/JohnDoe3@x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/JohnDoe3.jpg 1x, ./images/JohnDoe3@x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/JohnDoe3.jpg 1x, ./images/JohnDoe3@x2.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+
+                <img
+                  src="./images/JohnDoe3.jpg"
+                  class="ourteam__img"
+                  alt="zdjęcie mężczyzna w jasnej koszuli"
+                />
+              </picture>
+              <!--   <img
                 class="ourteam__img"
                 src="images/JohnDoe3.jpg"
                 alt="zdjęcie mężczyzna w jasnej koszuli"
                 width="450"
                 height="460"
                 srcset="images/JohnDoe3@x2.jpg 2x"
-              />
+              /> -->
               <div class="ourteam__team-wrap">
                 <h3 class="ourteam__h3">John Doe</h3>
                 <p class="ourteam__p">Marketing</p>
@@ -439,14 +504,37 @@
               </div>
             </li>
             <li class="ourteam__li">
-              <img
+              <picture>
+                <source
+                  srcset="./images/JohnDoe4.jpg 1x, ./images/JohnDoe4@x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/JohnDoe4.jpg 1x, ./images/JohnDoe4@x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/JohnDoe4.jpg 1x, ./images/JohnDoe4@x2.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+
+                <img
+                  src="./images/JohnDoe4.jpg"
+                  class="ourteam__img"
+                  alt="zdjęcie mężczyzna w jasnej koszuli"
+                />
+              </picture>
+
+              <!-- <img
                 class="ourteam__img"
                 src="images/JohnDoe4.jpg"
                 alt="zdjęcie mężczyzna w okularach w t-shirt"
                 width="450"
                 height="460"
                 srcset="images/JohnDoe4@x2.jpg 2x"
-              />
+              /> -->
               <div class="ourteam__team-wrap">
                 <h3 class="ourteam__h3">John Doe</h3>
                 <p class="ourteam__p">UI Designer</p>
@@ -641,7 +729,11 @@
 
       <ul>
         <li>
-          <a class="mobilemenu__anchor" href="index.html">Agencja</a>
+          <a
+            class="mobilemenu__anchor mobilemenu__anchor--active"
+            href="index.html"
+            >Agencja</a
+          >
         </li>
         <li>
           <a class="mobilemenu__anchor" href="portfolio.html">Portfolio</a>

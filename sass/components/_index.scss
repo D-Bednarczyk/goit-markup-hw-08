@@ -49,6 +49,9 @@
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
+    @media screen and (min-width: $tablet-size) {
+      text-align: left;
+    }
   }
   &__p {
     font-family: "Roboto";
@@ -112,18 +115,6 @@
     border-radius: 0px 0px 4px 4px;
   }
 
-  &__img {
-    width: 450px;
-    height: 460px;
-    @media screen and (min-width: $tablet-size) {
-      width: 354px;
-      height: 374px;
-    }
-    @media screen and (min-width: $desktop-size) {
-      width: 270px;
-      height: 260px;
-    }
-  }
   &__h2 {
     font-weight: 700;
     font-size: 28px;

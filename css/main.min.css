@@ -638,10 +638,6 @@ section {
 .ourteam {
   background: var(--button-white);
 }
-.ourteam__img {
-  width: 450;
-  height: 460;
-}
 .ourteam__flex {
   display: -webkit-box;
   display: -ms-flexbox;

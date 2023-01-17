@@ -102,10 +102,7 @@
 
 .ourteam {
   background: var(--button-white);
-  &__img {
-    width: 450;
-    height: 460;
-  }
+
   &__flex {
     display: flex;
     gap: 30px;
